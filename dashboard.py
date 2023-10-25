@@ -424,7 +424,7 @@ elif selected_menu == "Entertainment":
 
         st.plotly_chart(fig)
         
-    df_work['Date & Day'] = df_entertainment['Date'] + ' (' + df_entertainment['Day'].str[:3] + ')'
+    df_entertainment['Date & Day'] = df_entertainment['Date'] + ' (' + df_entertainment['Day'].str[:3] + ')'
     
     fig = px.bar(df_entertainment, x='Date & Day', y='Duration (hrs)', color='Activity', title='Duration of Entertainment Activities over Days')
     st.plotly_chart(fig)
