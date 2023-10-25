@@ -112,7 +112,7 @@ if selected_menu == "Overview":
     <div class="customMetric">
         <h5>Personal</h5>
         <h2>{avg_per_day['Personal']}</h2>
-        <label>hours spent per day</label>
+        <label>Average Hours Spent</label>
     </div>
     """
 
@@ -120,21 +120,21 @@ if selected_menu == "Overview":
     <div class="customMetric">
         <h5>Academics</h5>
         <h2>{avg_per_day['Academics']}</h2>
-        <label>hours spent per day</label>
+        <label>Average Hours Spent</label>
     </div>
     """
     metrics_html += f"""
     <div class="customMetric">
         <h5>Work / Business</h5>
         <h2>{avg_per_day['Work / Business']}</h2>
-        <label>hours spent per day</label>
+        <label>Average Hours Spent</label>
     </div>
     """
     metrics_html += f"""
     <div class="customMetric">
         <h5>Entertainment</h5>
         <h2>{avg_per_day['Entertainment']}</h2>
-        <label>hours spent per day</label>
+        <label>Average Hours Spent</label>
     </div>
     """
 
@@ -185,7 +185,7 @@ elif selected_menu == "Personal":
         <div class="customMetric">
             <h5>{activity}</h5>
             <h2>{avg_duration}</h2>
-            <label>hours spent per day</label>
+            <label>Average Hours Spent</label>
         </div>
         """
 
@@ -250,7 +250,7 @@ elif selected_menu == "Academics":
         <div class="customMetric">
             <h5>{activity}</h5>
             <h2>{avg_duration}</h2>
-            <label>hours spent per day</label>
+            <label>Average Hours Spent</label>
         </div>
         """
 
@@ -314,7 +314,7 @@ elif selected_menu == "Work / Business":
         <div class="customMetric">
             <h5>{activity}</h5>
             <h2>{avg_duration}</h2>
-            <label>hours spent per day</label>
+            <label>Average Hours Spent</label>
         </div>
         """
 
@@ -383,7 +383,7 @@ elif selected_menu == "Entertainment":
         <div class="customMetric">
             <h5>{activity}</h5>
             <h2>{avg_duration}</h2>
-            <label>hours spent per day</label>
+            <label>Average Hours Spent</label>
         </div>
         """
 
