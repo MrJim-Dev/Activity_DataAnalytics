@@ -193,6 +193,7 @@ elif selected_menu == "Personal":
     st.markdown(metrics_html, unsafe_allow_html=True)
     st.markdown('<hr/>', unsafe_allow_html=True);
 
+    df_personal['Date & Day'] = df_personal['Date'] + ' (' + df_personal['Day'].str[:3] + ')'
 
     # Create two columns for the plots
     col1, middle_space, col2 = st.columns([1, 0.1, 1])  # Adjust the middle space as needed (0.1 for 10% width)
@@ -212,7 +213,6 @@ elif selected_menu == "Personal":
 
     # Plot the bar chart in the second column with some margin/padding
     with col2:
-        df_personal['Date & Day'] = df_personal['Date'] + ' (' + df_personal['Day'].str[:3] + ')'
         # Filter out the rows related to "Sleeping Time"
         sleep_df = df[df['Activity'] == 'Sleeping Time']
 
@@ -258,6 +258,7 @@ elif selected_menu == "Academics":
     st.markdown(metrics_html, unsafe_allow_html=True)
     st.markdown('<hr/>', unsafe_allow_html=True);
 
+    df_academics['Date & Day'] = df_academics['Date'] + ' (' + df_academics['Day'].str[:3] + ')'
 
 
     # Create two columns for the plots
@@ -289,7 +290,7 @@ elif selected_menu == "Academics":
 
 
     
-    fig = px.bar(df_academics, x='Date', y='Duration (hrs)', color='Activity', title='Duration of Academic Activities over Days')
+    fig = px.bar(df_academics, x='Date & Day', y='Duration (hrs)', color='Activity', title='Duration of Academic Activities over Days')
     st.plotly_chart(fig)
 
 
@@ -349,9 +350,12 @@ elif selected_menu == "Work / Business":
         fig = px.bar(grouped, x='Activity', y='Frequency', title='Frequency of Each Work/Business Activity')
 
         st.plotly_chart(fig)
-        
 
-    fig = px.bar(df_work, x='Date', y='Duration (hrs)', color='Activity', title='Duration of Work/Business Activities over Days')
+    
+    df_work['Date & Day'] = df_work['Date'] + ' (' + df_work['Day'].str[:3] + ')'
+    
+
+    fig = px.bar(df_work, x='Date & Day', y='Duration (hrs)', color='Activity', title='Duration of Work/Business Activities over Days')
     st.plotly_chart(fig)
 
 
@@ -420,7 +424,8 @@ elif selected_menu == "Entertainment":
 
         st.plotly_chart(fig)
         
+    df_work['Date & Day'] = df_entertainment['Date'] + ' (' + df_entertainment['Day'].str[:3] + ')'
     
-    fig = px.bar(df_entertainment, x='Date', y='Duration (hrs)', color='Activity', title='Duration of Entertainment Activities over Days')
+    fig = px.bar(df_entertainment, x='Date & Day', y='Duration (hrs)', color='Activity', title='Duration of Entertainment Activities over Days')
     st.plotly_chart(fig)
     st.markdown('<hr/>', unsafe_allow_html=True);
