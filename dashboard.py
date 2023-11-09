@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 st.set_page_config(layout="wide")
 # Load dataset
-df = pd.read_csv("datasets/activities.csv")
+df = pd.read_csv("datasets/merged_activities.csv")
 
 # Check if 'selected_menu' is already in the session state
 if 'selected_menu' not in st.session_state:
@@ -87,11 +87,11 @@ st.write("\n")
 # Display content based on selected menu
 if selected_menu == "Overview":
     st.header("Activity Overview")
-    st.write("###### by James Alein Ocampo")
+    st.write("###### by James Alein Ocampo, Genesis Clabisellas, and Angela Madaya")
     st.markdown("""
-    *A comprehensive breakdown of my daily activities over the past two weeks.*
+    *A comprehensive breakdown of our daily activities over the past two weeks.*
 
-    This dashboard offers a glimpse into how I spent my time across different categories. It serves as a tool for reflection on my priorities and time management strategies.
+    This dashboard offers a glimpse into how I spent our time across different categories. It serves as a tool for reflection on our priorities and time management strategies.
 
     """)
     st.write("\n")
@@ -102,8 +102,12 @@ if selected_menu == "Overview":
 
     # Compute the total hours spent for each category
     total_duration = df.groupby('Category')['Duration (hrs)'].sum()
-    unique_days = df.groupby('Category')['Date'].nunique()
-    avg_per_day = (total_duration / unique_days).round(2)
+    # unique_days = df.groupby('Category')['Date'].nunique()
+    # avg_per_day = (total_duration / unique_days).round(2)
+
+    # Count the frequency of each category
+    frequency = df['Category'].value_counts()
+    avg_per_day = (total_duration / frequency).round(2)
     # print(avg_per_day)
 
     metrics_html = ""  # Collecting metrics HTML in this string
@@ -166,7 +170,7 @@ if selected_menu == "Overview":
 elif selected_menu == "Personal":
     
     st.header("Personal Activities")
-    st.write("Dive deeper into the analysis of my personal activities, revealing patterns in essential tasks and leisure moments. This section sheds light on my personal time is divided and prioritized over the course of two weeks.")
+    st.write("Dive deeper into the analysis of our personal activities, revealing patterns in essential tasks and leisure moments. This section sheds light on our personal time is divided and prioritized over the course of two weeks.")
     st.write("\n")
 
     # Filter by category
@@ -174,8 +178,12 @@ elif selected_menu == "Personal":
 
     # Compute the total hours spent for each activity under the Personal category
     total_duration = df_personal.groupby('Activity')['Duration (hrs)'].sum()
-    unique_days = df_personal.groupby('Activity')['Date'].nunique()
-    avg_per_day = (total_duration / unique_days).round(2)
+    # unique_days = df_personal.groupby('Activity')['Date'].nunique()
+    # avg_per_day = (total_duration / unique_days).round(2)
+
+    # Count the frequency of each category
+    frequency = df_personal['Activity'].value_counts()
+    avg_per_day = (total_duration / frequency).round(2)
 
     # Collecting metrics HTML in this string
     metrics_html = ""
@@ -232,15 +240,19 @@ elif selected_menu == "Personal":
 
 elif selected_menu == "Academics":
     st.header("Academic Activities")
-    st.write("Dive into the detailed analysis of how I spend an average day across various academic tasks, from attending classes to studying and managing tasks. Understand the distribution of my time and the frequency of each activity to gain insights into the intricacies of my academic life.")
+    st.write("Dive into the detailed analysis of how I spend an average day across various academic tasks, from attending classes to studying and managing tasks. Understand the distribution of our time and the frequency of each activity to gain insights into the intricacies of our academic life.")
     st.write("\n")
     # Filter by category
     df_academics = df[df["Category"] == "Academics"]
     
     # Compute the total hours spent for each activity under the Personal category
     total_duration = df_academics.groupby('Activity')['Duration (hrs)'].sum()
-    unique_days = df_academics.groupby('Activity')['Date'].nunique()
-    avg_per_day = (total_duration / unique_days).round(2)
+    # unique_days = df_academics.groupby('Activity')['Date'].nunique()
+    # avg_per_day = (total_duration / unique_days).round(2)
+
+    # Count the frequency of each category
+    frequency = df_academics['Activity'].value_counts()
+    avg_per_day = (total_duration / frequency).round(2)
 
     # Collecting metrics HTML in this string
     metrics_html = ""
@@ -296,7 +308,7 @@ elif selected_menu == "Academics":
 
 elif selected_menu == "Work / Business":
     st.header("Work/Business Activities")
-    st.write("Here's a closer look at how I allocate my hours in the realm of work and business. From essential meetings to task execution, and the occasional waiting periods, this breakdown offers an intimate glance into the rhythm of my daily business endeavors.")
+    st.write("Here's a closer look at how I allocate our hours in the realm of work and business. From essential meetings to task execution, and the occasional waiting periods, this breakdown offers an intimate glance into the rhythm of our daily business endeavors.")
     st.write("\n")
 
     # Filter by category
@@ -304,8 +316,11 @@ elif selected_menu == "Work / Business":
 
     # Compute the total hours spent for each activity under the Personal category
     total_duration = df_work.groupby('Activity')['Duration (hrs)'].sum()
-    unique_days = df_work.groupby('Activity')['Date'].nunique()
-    avg_per_day = (total_duration / unique_days).round(2)
+    # unique_days = df_work.groupby('Activity')['Date'].nunique()
+    # avg_per_day = (total_duration / unique_days).round(2)
+
+    frequency = df_work['Activity'].value_counts()
+    avg_per_day = (total_duration / frequency).round(2)
 
     # Collecting metrics HTML in this string
     metrics_html = ""
@@ -361,7 +376,7 @@ elif selected_menu == "Work / Business":
 
 elif selected_menu == "Entertainment":
     st.header("Entertainment Activities")
-    st.write("The chart below offers a glimpse into how I spend my free moments, primarily oscillating between the realms of social media and gaming. While the allure of digital connections is unmistakable, I also find solace in the immersive worlds of various games. Here's a visual representation of my daily relaxation rituals.")
+    st.write("The chart below offers a glimpse into how I spend our free moments, primarily oscillating between the realms of social media and gaming. While the allure of digital connections is unmistakable, I also find solace in the immersive worlds of various games. Here's a visual representation of our daily relaxation rituals.")
     st.write("\n")
 
 
@@ -370,17 +385,21 @@ elif selected_menu == "Entertainment":
 
     # Compute the total hours spent for each activity under the Personal category
     total_duration = df_entertainment.groupby('Activity')['Duration (hrs)'].sum()
-    unique_days = df_entertainment.groupby('Activity')['Date'].nunique()
-    avg_per_day = (total_duration / unique_days).round(2)
+    # unique_days = df_entertainment.groupby('Activity')['Date'].nunique()
+    # avg_per_day = (total_duration / unique_days).round(2)
+
+    # Count the frequency of each category
+    frequency = df_entertainment['Activity'].value_counts()
+    avg_per_day = (total_duration / frequency).round(2)
 
     # Collecting metrics HTML in this string
     metrics_html = ""
 
-    metrics_html += f"""
-        <div class="customMetric" style="opacity: 0;">
+    # metrics_html += f"""
+    #     <div class="customMetric" style="opacity: 0;">
      
-        </div>
-        """
+    #     </div>
+    #     """
 
     for activity, avg_duration in avg_per_day.items():
         metrics_html += f"""
