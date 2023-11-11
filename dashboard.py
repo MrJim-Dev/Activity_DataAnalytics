@@ -91,7 +91,7 @@ if selected_menu == "Overview":
     st.markdown("""
     *A comprehensive breakdown of our daily activities over the past two weeks.*
 
-    This dashboard offers a glimpse into howWespent our time across different categories. It serves as a tool for reflection on our priorities and time management strategies.
+    This dashboard offers a glimpse into how we spent our time across different categories. It serves as a tool for reflection on our priorities and time management strategies.
 
     """)
     st.write("\n")
@@ -169,9 +169,12 @@ if selected_menu == "Overview":
 
 
     #! Header title and description will be added here
-    st.header("TITLE HERE!")
+    # Render the metrics
+    st.markdown('<hr/>', unsafe_allow_html=True);
 
-    st.write("sub description\n")
+    st.header("Productiveness")
+
+    st.write("A comprehensive overview of time allocation between productive and unproductive activities\n")
     
     col1, middle_space, col2 = st.columns([1, 0.1, 1])  # Adjust the middle space as needed (0.1 for 10% width)
 
@@ -310,7 +313,7 @@ elif selected_menu == "Personal":
 
 elif selected_menu == "Academics":
     st.header("Academic Activities")
-    st.write("Dive into the detailed analysis of howWespend an average day across various academic tasks, from attending classes to studying and managing tasks. Understand the distribution of our time and the frequency of each activity to gain insights into the intricacies of our academic life.")
+    st.write("Dive into the detailed analysis of how we spend an average day across various academic tasks, from attending classes to studying and managing tasks. Understand the distribution of our time and the frequency of each activity to gain insights into the intricacies of our academic life.")
     st.write("\n")
     # Filter by category
     df_academics = df[df["Category"] == "Academics"]
@@ -378,7 +381,7 @@ elif selected_menu == "Academics":
 
 elif selected_menu == "Work / Business":
     st.header("Work/Business Activities")
-    st.write("Here's a closer look at howWeallocate our hours in the realm of work and business. From essential meetings to task execution, and the occasional waiting periods, this breakdown offers an intimate glance into the rhythm of our daily business endeavors.")
+    st.write("Here's a closer look at how we allocate our hours in the realm of work and business. From essential meetings to task execution, and the occasional waiting periods, this breakdown offers an intimate glance into the rhythm of our daily business endeavors.")
     st.write("\n")
 
     # Filter by category
@@ -446,7 +449,7 @@ elif selected_menu == "Work / Business":
 
 elif selected_menu == "Entertainment":
     st.header("Entertainment Activities")
-    st.write("The chart below offers a glimpse into howWespend our free moments, primarily oscillating between the realms of social media and gaming. While the allure of digital connections is unmistakable,Wealso find solace in the immersive worlds of various games. Here's a visual representation of our daily relaxation rituals.")
+    st.write("The chart below offers a glimpse into how we spend our free moments, primarily oscillating between the realms of social media and gaming. While the allure of digital connections is unmistakable, we also find solace in the immersive worlds of various games. Here's a visual representation of our daily relaxation rituals.")
     st.write("\n")
 
 
