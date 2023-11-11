@@ -167,6 +167,76 @@ if selected_menu == "Overview":
         fig = px.bar(df, x='Date & Day', y='Duration (hrs)', color='Category', title='Duration of Activities by Category over Days')
         st.plotly_chart(fig, use_container_width=True)
 
+
+    #! Header title and description will be added here
+    st.header("TITLE HERE!")
+
+    st.write("sub description\n")
+    
+    col1, middle_space, col2 = st.columns([1, 0.1, 1])  # Adjust the middle space as needed (0.1 for 10% width)
+
+    # Plot the pie chart in the first column with some margin/padding
+    with col1:
+        # df_pro_vs_unpro = df['Productive'].map({'Yes': 'Productive', 'No': 'Unproductive'})
+        productive_data = df.groupby('Productive')['Duration (hrs)'].sum().reset_index()
+        fig = px.pie(productive_data, names='Productive', values='Duration (hrs)', title='Productive vs Unproductive Time')
+
+        st.plotly_chart(fig)
+
+    # Add a little space in the middle
+    with middle_space:
+        pass
+
+    # Plot the bar chart in the second column with some margin/padding
+    with col2:
+        # Grouping by date and productivity, summing durations
+        # Ensure 'Productive' is a categorical variable with 'Yes' first
+        df['Productive'] = pd.Categorical(df['Productive'], categories=["Yes", "No"], ordered=True)
+
+        # Grouping by date and productivity, summing durations
+        grouped = df.groupby(["Date", "Productive"]).sum().reset_index()
+
+        # Creating a bar plot
+        fig = px.bar(grouped, x="Date", y="Duration (hrs)", color="Productive", barmode="group", 
+                    title="Productive vs Unproductive Activities Duration per Day")
+        st.plotly_chart(fig)
+
+    # Plot the pie chart in the first column with some margin/padding
+    with col1:
+         #productive
+        prod = df[(df['Productive'] == 'Yes')]
+
+        prod_total_hrs = prod.groupby('Activity')['Duration (hrs)'].sum().round(2)
+        prod_total_hrs_df = prod_total_hrs.reset_index()
+
+        prod_sort_df = prod_total_hrs_df.sort_values('Duration (hrs)', ascending=False)
+
+        fig = px.bar(prod_sort_df, x='Activity', y='Duration (hrs)',
+                    title='Productive Activities')
+
+
+        st.plotly_chart(fig)
+
+    # Add a little space in the middle
+    with middle_space:
+        pass
+
+    # Plot the bar chart in the second column with some margin/padding
+    with col2:
+        #unproductive
+        unprod = df[(df['Productive'] == 'No')]
+
+        unprod_total_hrs = unprod.groupby('Activity')['Duration (hrs)'].sum().round(2)
+        unprod_total_hrs_df = unprod_total_hrs.reset_index()
+
+        unprod_sort_df = unprod_total_hrs_df.sort_values('Duration (hrs)', ascending=False)
+
+        fig = px.bar(unprod_sort_df, x='Activity', y='Duration (hrs)',
+                    title='Unproductive Activities')
+
+        st.plotly_chart(fig)
+
+
 elif selected_menu == "Personal":
     
     st.header("Personal Activities")
