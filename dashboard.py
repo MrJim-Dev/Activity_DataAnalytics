@@ -91,7 +91,7 @@ if selected_menu == "Overview":
     st.markdown("""
     *A comprehensive breakdown of our daily activities over the past two weeks.*
 
-    This dashboard offers a glimpse into how I spent our time across different categories. It serves as a tool for reflection on our priorities and time management strategies.
+    This dashboard offers a glimpse into howWespent our time across different categories. It serves as a tool for reflection on our priorities and time management strategies.
 
     """)
     st.write("\n")
@@ -310,7 +310,7 @@ elif selected_menu == "Personal":
 
 elif selected_menu == "Academics":
     st.header("Academic Activities")
-    st.write("Dive into the detailed analysis of how I spend an average day across various academic tasks, from attending classes to studying and managing tasks. Understand the distribution of our time and the frequency of each activity to gain insights into the intricacies of our academic life.")
+    st.write("Dive into the detailed analysis of howWespend an average day across various academic tasks, from attending classes to studying and managing tasks. Understand the distribution of our time and the frequency of each activity to gain insights into the intricacies of our academic life.")
     st.write("\n")
     # Filter by category
     df_academics = df[df["Category"] == "Academics"]
@@ -378,7 +378,7 @@ elif selected_menu == "Academics":
 
 elif selected_menu == "Work / Business":
     st.header("Work/Business Activities")
-    st.write("Here's a closer look at how I allocate our hours in the realm of work and business. From essential meetings to task execution, and the occasional waiting periods, this breakdown offers an intimate glance into the rhythm of our daily business endeavors.")
+    st.write("Here's a closer look at howWeallocate our hours in the realm of work and business. From essential meetings to task execution, and the occasional waiting periods, this breakdown offers an intimate glance into the rhythm of our daily business endeavors.")
     st.write("\n")
 
     # Filter by category
@@ -446,7 +446,7 @@ elif selected_menu == "Work / Business":
 
 elif selected_menu == "Entertainment":
     st.header("Entertainment Activities")
-    st.write("The chart below offers a glimpse into how I spend our free moments, primarily oscillating between the realms of social media and gaming. While the allure of digital connections is unmistakable, I also find solace in the immersive worlds of various games. Here's a visual representation of our daily relaxation rituals.")
+    st.write("The chart below offers a glimpse into howWespend our free moments, primarily oscillating between the realms of social media and gaming. While the allure of digital connections is unmistakable,Wealso find solace in the immersive worlds of various games. Here's a visual representation of our daily relaxation rituals.")
     st.write("\n")
 
 
