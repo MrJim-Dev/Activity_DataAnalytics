@@ -133,50 +133,50 @@ Date,Day,Time,Category,Activity,Duration (hrs),How I Feel,Value,Name,Productive
 10/22/2023,Sunday,21:40:00,Academics,Meetings,1.76,,medium,James,Yes
 10/22/2023,Sunday,22:40:00,Entertainment,Social Media,1.35,,low,James,No
 10/22/2023,Sunday,22:40:00,Entertainment,Games,2.35,,low,James,No
-10/9/2023,Monday,6:30:00,Personal,Preparation,0.08,nothing,,Angela,Yes
-10/9/2023,Monday,6:35:00,Academics,Preparation,0.75,bored,,Angela,Yes
-10/9/2023,Monday,7:20:00,Academics,Travelling,0.17,excited,,Angela,No
-10/9/2023,Monday,7:30:00,Academics,Classes,2.5,confused,,Angela,Yes
-10/9/2023,Monday,10:00:00,Personal,Personal Errands,0.17,tired,,Angela,Yes
-10/9/2023,Monday,10:10:00,Academics,Travelling,0.17,tired,,Angela,No
-10/9/2023,Monday,10:15:00,Personal,Personal Errands,0.08,want to sleep,,Angela,Yes
-10/9/2023,Monday,10:20:00,Personal,Personal Errands,0.17,hungry,,Angela,Yes
-10/9/2023,Monday,10:30:00,Entertainment,Tachiyomi,1.23,mixed,,Angela,No
-10/9/2023,Monday,11:44:00,Entertainment,Facebook,0.08,bored,,Angela,No
-10/9/2023,Monday,11:49:00,Personal,Eating,0.13,contented,,Angela,Yes
-10/9/2023,Monday,11:57:00,Entertainment,Tiktok,0.02,amused,,Angela,No
-10/9/2023,Monday,11:58:00,Personal,Breaks,0.03,sleepy,,Angela,No
-10/9/2023,Monday,12:00:00,Personal,Sleeping,2,zzzzzzzzzzz,,Angela,Yes
-10/9/2023,Monday,14:00:00,Personal,Breaks,0.08,nothing,,Angela,No
-10/9/2023,Monday,14:01,Entertainment,Facebook,0.32,hungry,,Angela,No
-10/9/2023,Monday,14:20,Personal,Eating,0.08,contented,,Angela,Yes
-10/9/2023,Monday,14:25,Entertainment,Tiktok,0.03,amused,,Angela,No
-10/9/2023,Monday,14:27,Entertainment,Facebook,0.02,bored,,Angela,No
-10/9/2023,Monday,14:28,Entertainment,Messenger,0.07,happpy,,Angela,No
-10/9/2023,Monday,14:32,Academics,Preparation,0.47,determined,,Angela,Yes
-10/9/2023,Monday,15:00,Entertainment,Facebook,0.05,happy,,Angela,No
-10/9/2023,Monday,15:03,Academics,Travelling,0.17,nothing,,Angela,No
-10/9/2023,Monday,15:13,Entertainment,Facebook,0.28,bored,,Angela,No
-10/9/2023,Monday,15:30,Academics,Classes,2,confused,,Angela,Yes
-10/9/2023,Monday,17:30,Personal,Personal Errands,0.25,happy,,Angela,Yes
-10/9/2023,Monday,17:45,Academics,Travelling,0.12,bored,,Angela,No
-10/9/2023,Monday,17:52,Entertainment,Messenger,0.32,happy,,Angela,No
-10/9/2023,Monday,18:11:00,Personal,Eating,0.25,happy,,Angela,Yes
-10/9/2023,Monday,18:26:00,Personal,Personal Errands,0.08,tired,,Angela,Yes
-10/9/2023,Monday,18:31:00,Entertainment,Tiktok,0.3,amused,,Angela,No
-10/9/2023,Monday,18:49:00,Personal,Personal Errands,0.15,tired,,Angela,Yes
-10/9/2023,Monday,18:58:00,Entertainment,Facebook,0.05,amused,,Angela,No
-10/9/2023,Monday,19:01:00,Personal,Eating,0.08,satisified,,Angela,Yes
-10/9/2023,Monday,19:06:00,Entertainment,Messenger,0.08,happy,,Angela,No
-10/9/2023,Monday,19:11:00,Entertainment,Tiktok,1.45,happy,,Angela,No
-10/9/2023,Monday,20:38:00,Entertainment,Messenger,0.13,excited,,Angela,No
-10/9/2023,Monday,20:47:00,Personal,Personal Errands,0.1,sleepy,,Angela,Yes
-10/9/2023,Monday,20:53:00,Entertainment,Facebook,0.17,bored,,Angela,No
-10/9/2023,Monday,21:03:00,Entertainment,Tiktok,0.88,sleepy,,Angela,No
-10/9/2023,Monday,21:56:00,Entertainment,Messenger,0.13,happy,,Angela,No
-10/9/2023,Monday,22:04:00,Entertainment,Tiktok,0.33,confused,,Angela,No
-10/9/2023,Monday,22:24:00,Personal,Breaks,0.17,nothing,,Angela,No
-10/9/2023,Monday,22:34:00,Personal,Sleeping,8.33,zzzzzzzzzzz,,Angela,Yes
+10/09/2023,Monday,6:30:00,Personal,Preparation,0.08,nothing,,Angela,Yes
+10/09/2023,Monday,6:35:00,Academics,Preparation,0.75,bored,,Angela,Yes
+10/09/2023,Monday,7:20:00,Academics,Travelling,0.17,excited,,Angela,No
+10/09/2023,Monday,7:30:00,Academics,Classes,2.5,confused,,Angela,Yes
+10/09/2023,Monday,10:00:00,Personal,Personal Errands,0.17,tired,,Angela,Yes
+10/09/2023,Monday,10:10:00,Academics,Travelling,0.17,tired,,Angela,No
+10/09/2023,Monday,10:15:00,Personal,Personal Errands,0.08,want to sleep,,Angela,Yes
+10/09/2023,Monday,10:20:00,Personal,Personal Errands,0.17,hungry,,Angela,Yes
+10/09/2023,Monday,10:30:00,Entertainment,Tachiyomi,1.23,mixed,,Angela,No
+10/09/2023,Monday,11:44:00,Entertainment,Facebook,0.08,bored,,Angela,No
+10/09/2023,Monday,11:49:00,Personal,Eating,0.13,contented,,Angela,Yes
+10/09/2023,Monday,11:57:00,Entertainment,Tiktok,0.02,amused,,Angela,No
+10/09/2023,Monday,11:58:00,Personal,Breaks,0.03,sleepy,,Angela,No
+10/09/2023,Monday,12:00:00,Personal,Sleeping,2,zzzzzzzzzzz,,Angela,Yes
+10/09/2023,Monday,14:00:00,Personal,Breaks,0.08,nothing,,Angela,No
+10/09/2023,Monday,14:01,Entertainment,Facebook,0.32,hungry,,Angela,No
+10/09/2023,Monday,14:20,Personal,Eating,0.08,contented,,Angela,Yes
+10/09/2023,Monday,14:25,Entertainment,Tiktok,0.03,amused,,Angela,No
+10/09/2023,Monday,14:27,Entertainment,Facebook,0.02,bored,,Angela,No
+10/09/2023,Monday,14:28,Entertainment,Messenger,0.07,happpy,,Angela,No
+10/09/2023,Monday,14:32,Academics,Preparation,0.47,determined,,Angela,Yes
+10/09/2023,Monday,15:00,Entertainment,Facebook,0.05,happy,,Angela,No
+10/09/2023,Monday,15:03,Academics,Travelling,0.17,nothing,,Angela,No
+10/09/2023,Monday,15:13,Entertainment,Facebook,0.28,bored,,Angela,No
+10/09/2023,Monday,15:30,Academics,Classes,2,confused,,Angela,Yes
+10/09/2023,Monday,17:30,Personal,Personal Errands,0.25,happy,,Angela,Yes
+10/09/2023,Monday,17:45,Academics,Travelling,0.12,bored,,Angela,No
+10/09/2023,Monday,17:52,Entertainment,Messenger,0.32,happy,,Angela,No
+10/09/2023,Monday,18:11:00,Personal,Eating,0.25,happy,,Angela,Yes
+10/09/2023,Monday,18:26:00,Personal,Personal Errands,0.08,tired,,Angela,Yes
+10/09/2023,Monday,18:31:00,Entertainment,Tiktok,0.3,amused,,Angela,No
+10/09/2023,Monday,18:49:00,Personal,Personal Errands,0.15,tired,,Angela,Yes
+10/09/2023,Monday,18:58:00,Entertainment,Facebook,0.05,amused,,Angela,No
+10/09/2023,Monday,19:01:00,Personal,Eating,0.08,satisified,,Angela,Yes
+10/09/2023,Monday,19:06:00,Entertainment,Messenger,0.08,happy,,Angela,No
+10/09/2023,Monday,19:11:00,Entertainment,Tiktok,1.45,happy,,Angela,No
+10/09/2023,Monday,20:38:00,Entertainment,Messenger,0.13,excited,,Angela,No
+10/09/2023,Monday,20:47:00,Personal,Personal Errands,0.1,sleepy,,Angela,Yes
+10/09/2023,Monday,20:53:00,Entertainment,Facebook,0.17,bored,,Angela,No
+10/09/2023,Monday,21:03:00,Entertainment,Tiktok,0.88,sleepy,,Angela,No
+10/09/2023,Monday,21:56:00,Entertainment,Messenger,0.13,happy,,Angela,No
+10/09/2023,Monday,22:04:00,Entertainment,Tiktok,0.33,confused,,Angela,No
+10/09/2023,Monday,22:24:00,Personal,Breaks,0.17,nothing,,Angela,No
+10/09/2023,Monday,22:34:00,Personal,Sleeping,8.33,zzzzzzzzzzz,,Angela,Yes
 10/10/2023,Tuesday,6:54:00,Personal,Breaks,0.07,nothing,,Angela,No
 10/10/2023,Tuesday,6:58:00,Entertainment,Messenger,0.05,happy,,Angela,No
 10/10/2023,Tuesday,7:01:00,Entertainment,Facebook,0.23,happy,,Angela,No
@@ -597,20 +597,20 @@ Date,Day,Time,Category,Activity,Duration (hrs),How I Feel,Value,Name,Productive
 10/23/2023,Monday,19:38:00,Personal,Personal Errands,0.37,hungry,,Angela,Yes
 10/23/2023,Monday,20:00:00,Academics,Tasks,5,frustrated,,Angela,Yes
 10/23/2023,Monday,1:00:00,Personal,Sleeping,7.5,zzzzzzzzzzz,,Angela,Yes
-10/9/2023,Monday,,Personal,Sleeping,7,HAPPY,HIGH,Genesis,Yes
-10/9/2023,Monday,,Personal,Preparation,0.5,NEUTRAL,HIGH,Genesis,Yes
-10/9/2023,Monday,,Academics,Travelling,0.11,NEUTRAL,LOW,Genesis,No
-10/9/2023,Monday,,Academics,Classes,2.5,HAPPY,HIGH,Genesis,Yes
-10/9/2023,Monday,,Personal,Eating,0.5,HAPPY,MEDIUM,Genesis,Yes
-10/9/2023,Monday,,Entertainment,Social Media,1,HAPPY,LOW,Genesis,No
-10/9/2023,Monday,,Academics,Classes,3,NEUTRAL,HIGH,Genesis,Yes
-10/9/2023,Monday,,Academics,Classes,2,SAD,HIGH,Genesis,Yes
-10/9/2023,Monday,,Academics,Travelling,0.11,HAPPY,LOW,Genesis,No
-10/9/2023,Monday,,Personal,Gym,1.5,HAPPY,HIGH,Genesis,Yes
-10/9/2023,Monday,,Personal,Eating,0.5,NEUTRAL,MEDIUM,Genesis,Yes
-10/9/2023,Monday,,Entertainment,Games,2.5,HAPPY,MEDIUM,Genesis,No
-10/9/2023,Monday,,Academics,Tasks,1,NEUTRAL,HIGH,Genesis,Yes
-10/9/2023,Monday,,Personal,Sleeping,7,HAPPY,HIGH,Genesis,Yes
+10/09/2023,Monday,,Personal,Sleeping,7,HAPPY,HIGH,Genesis,Yes
+10/09/2023,Monday,,Personal,Preparation,0.5,NEUTRAL,HIGH,Genesis,Yes
+10/09/2023,Monday,,Academics,Travelling,0.11,NEUTRAL,LOW,Genesis,No
+10/09/2023,Monday,,Academics,Classes,2.5,HAPPY,HIGH,Genesis,Yes
+10/09/2023,Monday,,Personal,Eating,0.5,HAPPY,MEDIUM,Genesis,Yes
+10/09/2023,Monday,,Entertainment,Social Media,1,HAPPY,LOW,Genesis,No
+10/09/2023,Monday,,Academics,Classes,3,NEUTRAL,HIGH,Genesis,Yes
+10/09/2023,Monday,,Academics,Classes,2,SAD,HIGH,Genesis,Yes
+10/09/2023,Monday,,Academics,Travelling,0.11,HAPPY,LOW,Genesis,No
+10/09/2023,Monday,,Personal,Gym,1.5,HAPPY,HIGH,Genesis,Yes
+10/09/2023,Monday,,Personal,Eating,0.5,NEUTRAL,MEDIUM,Genesis,Yes
+10/09/2023,Monday,,Entertainment,Games,2.5,HAPPY,MEDIUM,Genesis,No
+10/09/2023,Monday,,Academics,Tasks,1,NEUTRAL,HIGH,Genesis,Yes
+10/09/2023,Monday,,Personal,Sleeping,7,HAPPY,HIGH,Genesis,Yes
 10/10/2023,Tuesday,,Personal,Preparation,0.5,NEUTRAL,HIGH,Genesis,Yes
 10/10/2023,Tuesday,,Academics,Travelling,0.11,NEUTRAL,LOW,Genesis,No
 10/10/2023,Tuesday,,Academics,Classes,3,HAPPY,HIGH,Genesis,Yes

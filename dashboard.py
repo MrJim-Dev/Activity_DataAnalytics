@@ -164,7 +164,8 @@ if selected_menu == "Overview":
 
     # Plot the bar chart in the second column with some margin/padding
     with col2:
-        fig = px.bar(df, x='Date & Day', y='Duration (hrs)', color='Category', title='Duration of Activities by Category over Days')
+        df_sorted = df.sort_values('Date & Day')
+        fig = px.bar(df_sorted, x='Date & Day', y='Duration (hrs)', color='Category', title='Duration of Activities by Category over Days')
         st.plotly_chart(fig, use_container_width=True)
 
 
@@ -306,8 +307,8 @@ elif selected_menu == "Personal":
 
         st.plotly_chart(fig)
 
-    
-    fig = px.bar(df_personal, x='Date & Day', y='Duration (hrs)', color='Activity', title='Duration of Personal Activities over Days')
+    df_sorted = df_personal.sort_values('Date & Day')
+    fig = px.bar(df_sorted, x='Date & Day', y='Duration (hrs)', color='Activity', title='Duration of Personal Activities over Days')
     st.plotly_chart(fig)
 
 
@@ -374,8 +375,8 @@ elif selected_menu == "Academics":
         st.plotly_chart(fig)
 
 
-    
-    fig = px.bar(df_academics, x='Date & Day', y='Duration (hrs)', color='Activity', title='Duration of Academic Activities over Days')
+    df_sorted = df_academics.sort_values('Date & Day')
+    fig = px.bar(df_sorted, x='Date & Day', y='Duration (hrs)', color='Activity', title='Duration of Academic Activities over Days')
     st.plotly_chart(fig)
 
 
@@ -518,6 +519,7 @@ elif selected_menu == "Entertainment":
         
     df_entertainment['Date & Day'] = df_entertainment['Date'] + ' (' + df_entertainment['Day'].str[:3] + ')'
     
-    fig = px.bar(df_entertainment, x='Date & Day', y='Duration (hrs)', color='Activity', title='Duration of Entertainment Activities over Days')
+    df_sorted = df_entertainment.sort_values('Date & Day')
+    fig = px.bar(df_sorted, x='Date & Day', y='Duration (hrs)', color='Activity', title='Duration of Entertainment Activities over Days')
     st.plotly_chart(fig)
     st.markdown('<hr/>', unsafe_allow_html=True);
