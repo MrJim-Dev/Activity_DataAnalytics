@@ -24,14 +24,8 @@ from catboost import CatBoostClassifier
 from sklearn.metrics import (confusion_matrix, ConfusionMatrixDisplay, accuracy_score, precision_score, 
                             recall_score, f1_score, roc_auc_score, classification_report, 
                             roc_curve, RocCurveDisplay)
-import nltk
 nltk.download('wordnet')
-nltk.download('omw-1.4') 
-
-def lemmatization(words):
-    lemm = WordNetLemmatizer()
-    tokens = [lemm.lemmatize(word) for word in words]
-    return tokens
+nltk.download('omw-1.4')
 
 
 st.set_page_config(layout="wide")
@@ -47,13 +41,13 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
-
+  
 # Style the buttons to make them full-width and add styling for custom metric container
 st.markdown("""
     <style>
         .main {
-            padding-left: 10%;
-            padding-right: 10%;
+            padding-left: 20%;
+            padding-right: 20%;
         }
         .main > div {
             margin-top: -60px;
